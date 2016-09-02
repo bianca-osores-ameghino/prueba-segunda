@@ -1,13 +1,43 @@
 import java.util.List;
 
 /**
- * Created by damian on 26/08/16.
+ * Created by damian on 02/09/16.
  */
 public class Cuadrado {
-    public int lado;
 
-    public Cuadrado(int i) {
-        this.lado = i;
+    double lado;
+    public double sumarAreasDeCuadrados;
+
+
+    public Cuadrado(double lado) {
+        this.lado =lado;
     }
 
+
+    public double area() {
+        return(lado*lado);
+    }
+
+    public double perimetro() {
+        return(lado*4);
+    }
+
+    public double sumarAreasDeCuadrados(List<Cuadrado> cuadrados) {
+        double SumarAreaDeCuadrados = 0;
+        for (Cuadrado c: cuadrados){
+            sumarAreasDeCuadrados= sumarAreasDeCuadrados + c.area();
+        }
+        return (sumarAreasDeCuadrados);
+    }
+
+
+    public double sumarAreasDeFiguras(List<Figura> rectangulos) {
+        double sumarAreasDeFiguras = 0;
+        for (Figura c : rectangulos){
+            sumarAreasDeFiguras = sumarAreasDeFiguras + c.area();
+        }
+
+        return (sumarAreasDeFiguras);
+
+    }
 }

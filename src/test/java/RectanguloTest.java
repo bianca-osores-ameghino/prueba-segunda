@@ -20,6 +20,7 @@ public class RectanguloTest {
     }
 
 
+
     @Test
     public void area(){
         Rectangulo rectangulo = new Rectangulo(10,30);
@@ -51,6 +52,8 @@ public class RectanguloTest {
 
         Assert.assertEquals(316, c.sumarAreasDeFiguras(rectangulos),0);
     }
+
+
 
 
 }

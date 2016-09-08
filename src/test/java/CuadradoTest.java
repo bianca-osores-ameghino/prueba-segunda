@@ -10,6 +10,16 @@ import java.util.List;
  */
 public class CuadradoTest {
 
+    @Test
+    public void compararAreasCuad(){
+        Cuadrado c1 = new Cuadrado (10);
+        Cuadrado c2 = new Cuadrado (3);
+
+        boolean resultado = c1.tieneAreaMayor(c2);
+
+        Assert.assertTrue(resultado);
+    }
+
 
     @Test
     public void crearCuadrado(){
@@ -46,4 +56,6 @@ public class CuadradoTest {
 
         Assert.assertEquals(113, cuadrado1.sumarAreasDeCuadrados(cuadrados), 0);
     }
+
+
 }

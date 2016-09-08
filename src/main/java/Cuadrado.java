@@ -40,4 +40,8 @@ public class Cuadrado {
         return (sumarAreasDeFiguras);
 
     }
+
+    public boolean tieneAreaMayor(Cuadrado c2) {
+        return (this.area()> c2.area());
+    }
 }

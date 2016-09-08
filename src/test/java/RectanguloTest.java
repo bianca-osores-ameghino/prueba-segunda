@@ -10,6 +10,14 @@ import java.util.List;
  */
 public class RectanguloTest {
 
+    @Test
+    public void compararAreas(){
+        Rectangulo r1 = new Rectangulo (10 ,6);
+        Rectangulo r2 = new Rectangulo(3,6);
+
+        boolean resultado
+    }
+
 
     @Test
     public void crearRectangulo(){

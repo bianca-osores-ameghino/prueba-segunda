@@ -23,6 +23,10 @@ public class Circulo {
     public double perimetro() {
         return (Math.PI*this.radio);
     }
+
+    public boolean tieneAreaMayor(Circulo c2) {
+        return (this.area() > c2.area());
+    }
 }
 
 

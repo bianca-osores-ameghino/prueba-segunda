@@ -15,7 +15,9 @@ public class RectanguloTest {
         Rectangulo r1 = new Rectangulo (10 ,6);
         Rectangulo r2 = new Rectangulo(3,6);
 
-        boolean resultado
+        boolean resultado = r1.tieneAreaMayor (r2);
+
+        Assert.assertTrue(resultado);
     }
 
 

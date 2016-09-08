@@ -27,5 +27,7 @@ public class Rectangulo implements Figura{
     }
 
 
-
+        public boolean tieneAreaMayor(Rectangulo r2) {
+            return (this.area()> r2.area());
+    }
 }

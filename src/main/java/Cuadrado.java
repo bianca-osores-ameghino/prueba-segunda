@@ -6,7 +6,6 @@ import java.util.List;
 public class Cuadrado implements Figura {
 
     double lado;
-    public double sumarAreasDeCuadrados;
 
 
     public Cuadrado(double lado) {
@@ -27,7 +26,7 @@ public class Cuadrado implements Figura {
     }
 
     public double sumarAreasDeCuadrados(List<Cuadrado> cuadrados) {
-        double SumarAreaDeCuadrados = 0;
+        double sumarAreasDeCuadrados = 0;
         for (Cuadrado c: cuadrados){
             sumarAreasDeCuadrados= sumarAreasDeCuadrados + c.area();
         }

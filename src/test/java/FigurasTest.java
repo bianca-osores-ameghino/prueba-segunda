@@ -1,6 +1,9 @@
+import jdk.nashorn.internal.runtime.CodeStore;
+import jdk.nashorn.internal.runtime.linker.LinkerCallSite;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -8,6 +11,28 @@ import java.util.List;
  * Created by damian on 26/08/16.
  */
 public class FigurasTest{
+
+    @Test
+
+    public void nTest (){
+
+        Figura f1 = new Cuadrado (5);
+        Figura f2 = new Circulo (10);
+        Figura f3 = new Rectangulo(20,10);
+
+    List<Figura> figuritas = new ArrayList<Figura>();
+
+        figuritas.add (f1);
+        figuritas.add (f2);
+        figuritas.add (f3);
+
+
+        Dibujo d = new Dibujo(figuritas);
+
+    Assert.assertEquals(539,d.area(),10);
+
+    }
+
 
     @Test
 
@@ -26,7 +51,7 @@ public class FigurasTest{
         Assert.assertEquals(50, fig.area(), 0);
 
     }
-jhgdfjhg
+
     @Test
     public void calcularPerimetro() {
         Figura fig = new Circulo(10);

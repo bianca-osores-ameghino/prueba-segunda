@@ -26,7 +26,7 @@ public class FigurasTest{
         Assert.assertEquals(50, fig.area(), 0);
 
     }
-
+jhgdfjhg
     @Test
     public void calcularPerimetro() {
         Figura fig = new Circulo(10);

@@ -26,8 +26,12 @@ public class Rectangulo implements Figura{
         return (perimetro);
     }
 
+    public boolean compararPerimetros(Figura f2) {
+        return  this.perimetro() >  f2.perimetro();
+    }
 
-        public boolean tieneAreaMayor(Rectangulo r2) {
+
+    public boolean tieneAreaMayor(Rectangulo r2) {
             return (this.area()> r2.area());
     }
 }

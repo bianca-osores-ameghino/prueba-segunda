@@ -5,4 +5,7 @@ public interface Figura {
     double area();
     double perimetro();
 
+    boolean compararPerimetros(Figura f2);
+
+
 }

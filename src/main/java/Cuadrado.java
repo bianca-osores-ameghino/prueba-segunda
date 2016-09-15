@@ -3,7 +3,7 @@ import java.util.List;
 /**
  * Created by damian on 02/09/16.
  */
-public class Cuadrado {
+public class Cuadrado implements Figura {
 
     double lado;
     public double sumarAreasDeCuadrados;
@@ -20,6 +20,10 @@ public class Cuadrado {
 
     public double perimetro() {
         return(lado*4);
+    }
+
+    public boolean compararPerimetros(Figura f2) {
+        return  this.perimetro() >  f2.perimetro();
     }
 
     public double sumarAreasDeCuadrados(List<Cuadrado> cuadrados) {

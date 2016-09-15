@@ -8,7 +8,17 @@ import java.util.List;
  * Created by damian on 26/08/16.
  */
 public class FigurasTest{
-/*
+
+    @Test
+
+    public void compPar () {
+        Figura f1 = new Circulo(5);
+        Figura f2 = new Circulo(10);
+
+        boolean comp = f2.compararPerimetros(f1);
+
+        Assert.assertTrue(comp);
+    }
     @Test
     public void calcularArea() {
         Figura fig = new Rectangulo(5,10);
@@ -35,5 +45,5 @@ public class FigurasTest{
         List<Figura> figuras = Arrays.asList(fig,fig2,fig3);
 
         Assert.assertEquals(1331, cuadrado.sumarAreasDeFiguras(figuras),10);
-    }*/
+    }
 }

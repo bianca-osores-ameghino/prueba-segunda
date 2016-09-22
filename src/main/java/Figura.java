@@ -8,4 +8,7 @@ public interface Figura {
     boolean compararPerimetros(Figura f2);
 
 
+
+
+
 }

@@ -1,5 +1,4 @@
-import jdk.nashorn.internal.runtime.CodeStore;
-import jdk.nashorn.internal.runtime.linker.LinkerCallSite;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,6 +10,36 @@ import java.util.List;
  * Created by damian on 26/08/16.
  */
 public class FigurasTest{
+
+    @Test
+
+    public void figuraDentroDefigura(){
+
+        Figura c1 = new Cuadrado(5);
+
+        Figura c2 = new Cuadrado(10);
+
+        Figura r1 = new Rectangulo(10,100);
+
+        List<Figura> imagen = new ArrayList<Figura>();
+
+        imagen.add (c1);
+        imagen.add (r1);
+
+        Dibujo d1 = new Dibujo (imagen);
+
+        List<Figura> imagen2 = new ArrayList<Figura>();
+        imagen2.add (c2);
+        imagen2.add (d1);
+        imagen2.add (d1);
+
+        Dibujo d2 = new Dibujo(imagen2);
+
+        Assert.assertEquals(d2.area(),2150,   0);
+
+
+    }
+
 
     @Test
 

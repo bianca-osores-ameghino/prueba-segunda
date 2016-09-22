@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Created by alumno on 15/09/16.
  */
-public class Dibujo {
+public class Dibujo implements Figura{
     double area;
 
     List<Figura> figuritas;
@@ -26,6 +26,17 @@ public class Dibujo {
 
         }
         return area;
+    }
+
+    @Override
+    public double perimetro() {
+        return 0;
+    }
+
+
+    @Override
+    public boolean compararPerimetros(Figura f2) {
+        return false;
     }
 
 
